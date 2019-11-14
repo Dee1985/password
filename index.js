@@ -11,10 +11,3 @@ function password(){
     const generat = uppercase[randomIndex]
     }
 
-
-//user needs to select at least one character type- if no selection computer will read "error- please select a character"
-
-
-//user to select length of password: 1- 128
-// onclick- button should generate password from arrays established
-// ** bonus: have a copy password option available
