@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+.btn-outline-danger {
+    padding-right: 25%;
+}
+.btn-outline-success {
+    padding-right: 20%;
+}
+.btn-outline-secondary {
+    padding-right: 15%;
+}
+.btn-outline-info {
+    padding-right: 15%;
+}
+
+</style>
+
+
+<body>
+<div class="container">
+            <div class="card text-center">
+                  
+                <div class="card-body">
+                 <h1>Password Generator</h1> 
+                 <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="alert alert-primary " role="alert">
+                       password will appear here  
+                </div>
+                    </div>
+                </div>
+               
+            </div
+             
+                      
+<!-- area for password customization -->
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div class="jumbotron bg-light" >
+    <h3 class="display-6">Customize Your Password</h3>
+        <hr class= "my-4">
+    <br>
+    <br>                    
+  
+<!-- range inputs i.e 1-100 -->
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <form>
+                <div class="form-group">
+                        <label for="formGroupExampleInput">Password Length 1-50</label>
+                        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: 12">
+                        </div>
+                      </div>
+            </form>
+             <br>
+             <br>
+             <br>
+           
+             <button type="button" class="btn btn-primary btn-lg btn-block">Generate</button> 
+             
+       </div>                                  
+
+<!-- check boxes for character categories  -->            
+                        <div class="col-2 ">
+                            <p class="lead">Select</p>
+                            <div class="shadow p-3 mb-5 bg-white rounded">
+                                <button type="button" class="btn btn-outline-secondary btn-smtext-center" data-toggle="button" 
+                                aria-pressed="false" autocomplete="off">Uppercase</button>
+                          
+                                <button type="button" class="btn btn-outline-info btn-smtext-center" data-toggle="button" 
+                                aria-pressed="false" autocomplete="off">Lowercase</button>
+                        
+                      
+                         
+                                 <button type="button" class="btn btn-outline-success btn-smtext-center" data-toggle="button" 
+                                 aria-pressed="false" autocomplete="off">Numbers</button>
+                        
+                       
+                                <button type="button" class="btn btn-outline-danger btn-smtext-center" data-toggle="button" 
+                                aria-pressed="false" autocomplete="off" >Symbols</button>
+                            </div>  
+                         </div>
+              
+                
+                
+           
+                
+    </div>
+
+                       
+ </div>
+</div>
+<Script>
+function change() {
+ const inputEl = document.getElementById("uppercaseCheck");
+ console.log(inputEl.getAttribute("class"));
+ inputEl.setAttribute("class", "form-check-input bg-danger ");
+ 
+//   const backgroundEl = document.getElementById ("jumbobg");
+//   console.log(backgroundEl.getAttribute("class"));
+//   backgroundEl.setAttribute("class", "jumbotron  bg-danger")
+
+}
+</script>
+ 
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
