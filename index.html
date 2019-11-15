@@ -56,16 +56,16 @@
             <form>
                 <div class="form-group">
                         <label for="formGroupExampleInput">Password Length 1-50</label>
-                        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+                       
                         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: 12">
                         </div>
-                      </div>
+                      
             </form>
              <br>
              <br>
              <br>
            
-             <button type="button" class="btn btn-primary btn-lg btn-block">Generate</button> 
+             <button type="button" id="button" class="btn btn-primary btn-lg btn-block">Generate</button> 
              
        </div>                                  
 
@@ -100,18 +100,38 @@
  </div>
 </div>
 <Script>
-function change() {
- const inputEl = document.getElementById("uppercaseCheck");
- console.log(inputEl.getAttribute("class"));
- inputEl.setAttribute("class", "form-check-input bg-danger ");
+
  
 //   const backgroundEl = document.getElementById ("jumbobg");
 //   console.log(backgroundEl.getAttribute("class"));
 //   backgroundEl.setAttribute("class", "jumbotron  bg-danger")
 
+
+
+// random character selector
+function generatePassword() {
+    const buttonEl = document.querySelector("button")
+   
+    function selector () {
+    const numbers = [1,2,3];
+    const lowerCase = ["a","b","c"];
+    const upperCase = ["A","B","C"]
+    const Symbols = ["!","@","#"]
+    const combo = numbers.concat(lowerCase,upperCase,Symbols);
+    const randomIndex = combo[Math.floor(Math.random()*combo.length)];  
+    console.log(randomIndex)
 }
+  buttonEl.addEventListener("click", selector);
+ } 
+ 
+
+
+generatePassword();
+
+
 </script>
  
+
 
 
 
