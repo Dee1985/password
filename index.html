@@ -33,7 +33,7 @@
                 <div class="card-body">
                  <h1>Password Generator</h1> 
                  <div class="shadow p-3 mb-5 bg-white rounded">
-                    <div class="alert alert-primary " role="alert">
+                    <div class="alert alert-primary " id="result" role="alert">
                        password will appear here  
                 </div>
                     </div>
@@ -57,7 +57,7 @@
                 <div class="form-group">
                         <label for="formGroupExampleInput">Password Length 1-50</label>
                        
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: 12">
+                        <input type="text" class="form-control" id="input" placeholder="Ex: 12">
                         </div>
                       
             </form>
@@ -69,23 +69,23 @@
              
        </div>                                  
 
-<!-- check boxes for character categories  -->            
+<!-- check boxes for character categories, added id   -->            
                         <div class="col-2 ">
                             <p class="lead">Select</p>
                            
-                                <button type="button" class="btn btn-outline-secondary btn-smtext-center" data-toggle="button" 
+                                <button type="button" id="upper" class="btn btn-outline-secondary btn-smtext-center" data-toggle="button" 
                                 aria-pressed="false" autocomplete="off">Uppercase</button>
                           
-                                <button type="button" class="btn btn-outline-info btn-smtext-center" data-toggle="button" 
+                                <button type="button" id="lower" class="btn btn-outline-info btn-smtext-center" data-toggle="button" 
                                 aria-pressed="false" autocomplete="off">Lowercase</button>
                         
                       
                          
-                                 <button type="button" class="btn btn-outline-success btn-smtext-center" data-toggle="button" 
+                                 <button type="button" id="num" class="btn btn-outline-success btn-smtext-center" data-toggle="button" 
                                  aria-pressed="false" autocomplete="off">Numbers</button>
                         
                        
-                                <button type="button" class="btn btn-outline-danger btn-smtext-center" data-toggle="button" 
+                                <button type="button" id="sym" class="btn btn-outline-danger btn-smtext-center" data-toggle="button" 
                                 aria-pressed="false" autocomplete="off" >Symbols</button>
                            
                          </div>
@@ -99,37 +99,8 @@
                        
  </div>
 </div>
-<Script>
-
- 
-//   const backgroundEl = document.getElementById ("jumbobg");
-//   console.log(backgroundEl.getAttribute("class"));
-//   backgroundEl.setAttribute("class", "jumbotron  bg-danger")
 
 
-
-// random character selector
-function generatePassword() {
-    const buttonEl = document.querySelector("button")
-   
-    function selector () {
-    const numbers = [1,2,3];
-    const lowerCase = ["a","b","c"];
-    const upperCase = ["A","B","C"]
-    const Symbols = ["!","@","#"]
-    const combo = numbers.concat(lowerCase,upperCase,Symbols);
-    const randomIndex = combo[Math.floor(Math.random()*combo.length)];  
-    console.log(randomIndex)
-}
-  buttonEl.addEventListener("click", selector);
- } 
- 
-
-
-generatePassword();
-
-
-</script>
  
 
 
@@ -140,6 +111,22 @@ generatePassword();
 
 
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

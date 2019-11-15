@@ -41,3 +41,17 @@ setTimeout(function(){
     buttonEl.setAttribute("class","btn btn-success btn-lg")
 }, 5000);
 
+
+
+const numbersEl= document.getElementById("num"); 
+const lowercaseEl= document.getElementById("lower"); 
+const uppercaseEl= document.getElementById("upper"); 
+const symbolsEl= document.getElementById("sym"); 
+const resultEl=  document.getElementById("result");
+const lengthEl= document.getElementById("input"); 
+console.log();
+
+const passlength = +lengthEl.value;
+const yesLower= lowercaseEl.checked;
+const yesUpper= uppercaseEl.checked;
+const yesSymbols= symbolsEl.checked;
